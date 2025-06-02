@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Tobi's Bar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="index.html" class="nav-logo">Tobi's Bar</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="menu.html" class="nav-link">Menu</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+                <li class="nav-item"><a href="events.html" class="nav-link">Events</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link active">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="page-padding">
+        <section class="contact-section section-padding">
+            <h1 class="page-title">Get In Touch</h1>
+
+            <div class="contact-container">
+                <!-- Location & Hours -->
+                <div class="contact-info">
+                    <h2>Visit Us</h2>
+                    <p><strong>Address:</strong><br> 123 Spice Street, Flavor Town, FT 54321</p>
+                    <p><strong>Phone:</strong><br> (555) 123-4567</p>
+                    <p><strong>Email:</strong><br> info@tobisbar.com</p>
+
+                    <h2>Operating Hours</h2>
+                    <p><strong>Monday - Thursday:</strong> 4:00 PM - 12:00 AM</p>
+                    <p><strong>Friday - Saturday:</strong> 4:00 PM - 2:00 AM</p>
+                    <p><strong>Sunday:</strong> 2:00 PM - 10:00 PM</p>
+
+                    <!-- Embedded Google Map -->
+                    <div class="map-container">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.019110567771!2d-122.4194156846816!3d37.77492957975841!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808c4c0b0f7b%3A0xdd1a4e4f3a0e6e5e!2sSan%20Francisco%20City%20Hall!5e0!3m2!1sen!2sus!4v1678886410531!5m2!1sen!2sus"
+                            width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <!-- Replace the src URL with your actual Google Maps embed code -->
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form" id="reservations">
+                    <h2>Send Us a Message / Reservations</h2>
+                    <p>For reservations for groups of 6+, please use the form below or call us.</p>
+                    <form action="#" method="POST"> <!-- Add your form processing URL/script here -->
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject:</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message / Reservation Details (Date, Time, Party Size):</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2023 Tobi's Bar. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
